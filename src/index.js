@@ -1,12 +1,14 @@
 import express from 'express';
 
 import adminsRoutes from './routes/admins.routes.js';
+import eventosRoutes from './routes/eventos.routes.js';
 
 const app = express();
 
 app.use(express.json());
 
 app.use('/api', adminsRoutes);
+app.use('/api', eventosRoutes);
 
 const PORT = Number(process.env.PORT) || 3000;
 

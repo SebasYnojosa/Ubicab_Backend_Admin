@@ -2,7 +2,6 @@
   "name": "ubicab_backend_admin",
   "version": "1.0.0",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "build": "npx prisma generate && npx prisma migrate dev",
     "start": "node ./src/index.js",
