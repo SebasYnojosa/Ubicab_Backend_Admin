@@ -2,6 +2,7 @@ import express from 'express';
 
 import adminsRoutes from './routes/admins.routes.js';
 import eventosRoutes from './routes/eventos.routes.js';
+import lugaresRoutes from './routes/lugares.routes.js';
 
 const app = express();
 
