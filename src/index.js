@@ -9,6 +9,7 @@ app.use(express.json());
 
 app.use('/api', adminsRoutes);
 app.use('/api', eventosRoutes);
+app.use('/api', lugaresRoutes);
 
 const PORT = Number(process.env.PORT) || 3000;
 
