@@ -10,7 +10,6 @@ generator client {
 datasource db {
   provider  = "postgresql"
   url       = env("DATABASE_URL")
-  directUrl = env("DIRECT_URL")
 }
 model Administrador{
   id        Int      @id @default(autoincrement())
@@ -22,7 +21,7 @@ model Administrador{
 
 model Evento {
   id                          Int      @id @default(autoincrement())
-  name                        String
+  name                        String   @unique
   description                 String
   date_inicio                 DateTime
   date_fin                    DateTime
